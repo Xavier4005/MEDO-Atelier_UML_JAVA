@@ -12,6 +12,14 @@ public class Etudiant {
     private double nombreHeureAbsence;
 
     public Etudiant() {}
+
+    public Etudiant(int id, String nom, String prenom, double nombreHeureAbsence) {
+        this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.nombreHeureAbsence = nombreHeureAbsence;
+    }
+
     public Etudiant(String nom, String prenom, int matricule, Statut statut, Date dateAdmission, double nombreHeureAbsence ) {
         this.nom = nom;
         this.prenom = prenom;

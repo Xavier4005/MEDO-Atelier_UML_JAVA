@@ -1,12 +1,14 @@
 package Projet;
 
 import Projet.Models.Etudiant;
+import Projet.Models.GestionEtudiant;
 
 public class Main {
     public static void main(String[] args)
     {
-        System.out.println("Hello, World!");
-
+        GestionEtudiant gestionEtudiant = new GestionEtudiant();
+        gestionEtudiant.getListeEtudiantARenvoyer();
+        gestionEtudiant.afficherListeEtudiantARenvoyer();
 
     }
 }

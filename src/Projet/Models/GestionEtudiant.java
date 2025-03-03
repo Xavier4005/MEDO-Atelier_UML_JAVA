@@ -1,5 +1,7 @@
 package Projet.Models;
 
+import Projet.DBGestion;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +13,8 @@ public class GestionEtudiant {
     }
 
     public List<Etudiant> getListeEtudiantARenvoyer() {
+        DBGestion db = new DBGestion();
+        listeEtudiantARenvoyer = db.getListEtudiantARenvoyer();
         return listeEtudiantARenvoyer;
     }
 
